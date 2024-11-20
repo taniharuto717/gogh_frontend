@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.MainContainer {
+  width: 80%; /* Viewportの幅の80%を基準とする */
+  max-width: 1200px; /* 最大幅を1200pxに制限する */
+}
+
+.ChatContainer{
+  scroll-behavior: smooth;
+}
