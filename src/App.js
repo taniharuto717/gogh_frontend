@@ -48,7 +48,7 @@ function App() {
     setTyping(true);
 
     // ボットの応答を取得
-    axios.post('http://127.0.0.1:8000', { text: text }).then((response) => {
+    axios.post('http://0.0.0.0:10000/', { text: text }).then((response) => {
       const viewerMessages = {
         message: response.data.viewer,
         sentTime: "just now",
