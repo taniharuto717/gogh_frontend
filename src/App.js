@@ -48,7 +48,7 @@ function App() {
     setTyping(true);
 
     // ボットの応答を取得
-    axios.post('https://pro-gogh.onrender.com/', { text: text }).then((response) => {
+    axios.post('https://pro-gogh.onrender.com', { text: text }).then((response) => {
       const viewerMessages = {
         message: response.data.viewer,
         sentTime: "just now",
