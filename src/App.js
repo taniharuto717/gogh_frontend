@@ -45,7 +45,7 @@ function App() {
         direction: "incoming",
         position: "first",
         avatar: ViewerImage,
-        name: "Viewer",
+        name: "鑑賞者AI",
         timestamp: new Date().getTime(),
       };
 
@@ -56,7 +56,7 @@ function App() {
         direction: "incoming",
         position: "first",
         avatar: FaslitatorImage,
-        name: "Facilitator",
+        name: "ファシリテータAI",
         timestamp: new Date().getTime() + 1,
       };
 
@@ -98,11 +98,6 @@ function App() {
                 />
               </ConversationHeader>
 
-              {/* TypingIndicatorをMessageListの上に配置 */}
-              <Box position="absolute" top={0} left={0} right={0} zIndex={10}>
-                {isTyping && <TypingIndicator content="ただいま考え中・・・" />}
-              </Box>
-
               {/* メッセージリスト */}
               <MessageList>
                 <Message
@@ -114,7 +109,7 @@ function App() {
                     position: "first",
                   }}>
                   <Avatar src={FaslitatorImage} />
-                  <Message.Footer sender="Facilitator" />
+                  <Message.Footer sender="ファシリテータAI" />
                 </Message>
                 <Message
                   model={{
@@ -125,7 +120,7 @@ function App() {
                     position: "first",
                   }}>
                   <Avatar src={ViewerImage} />
-                  <Message.Footer sender="Viewer" />
+                  <Message.Footer sender="鑑賞者AI" />
                 </Message>
                 <Message
                   model={{
@@ -136,7 +131,7 @@ function App() {
                     position: "first",
                   }}>
                   <Avatar src={FaslitatorImage} />
-                  <Message.Footer sender="Facilitator" />
+                  <Message.Footer sender="ファシリテータAI" />
                 </Message>
 
                 {allMessages.map((msg, index) => (
