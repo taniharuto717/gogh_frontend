@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./App.css";
-import ImagePreview from './Component/ImagePreview';
+import ImagePreview from './Components/ImagePreview';
 import axios from "axios";
 import { MainImage } from './styles/styles';
 import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
@@ -14,9 +14,9 @@ import {
   TypingIndicator,
   Avatar,
 } from "@chatscope/chat-ui-kit-react";
-import goghImage from './Component/images/Gogh.jpg';
-import FaslitatorImage from './Component/images/Facilitator.png';
-import ViewerImage from './Component/images/Viewer.png';
+import goghImage from './Components/images/Gogh.jpg';
+import FaslitatorImage from './Components/images/Facilitator.png';
+import ViewerImage from './Components/images/Viewer.png';
 import Box from '@mui/material/Box';
 
 function App() {
