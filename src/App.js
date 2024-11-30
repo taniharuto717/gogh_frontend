@@ -37,7 +37,7 @@ function App() {
     setUserMessages(prevMessages => [...prevMessages, userMessage]);
     setTyping(true);
 
-    axios.post('http://127.0.0.1:8000', { text: text }).then((response) => {
+    axios.post('https://pro-gogh.onrender.com', { text: text }).then((response) => {
       const viewerMessages = {
         message: response.data.viewer,
         sentTime: "just now",
