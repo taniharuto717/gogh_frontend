@@ -93,8 +93,8 @@ function App() {
               {/* ヘッダー部分 */}
               <ConversationHeader>
                 <ConversationHeader.Content
-                  userName="Facilitator"
-                  info="対話型鑑賞をしましょう"
+                  userName="対話型鑑賞をしましょう"
+                  info="題材絵画：ゴッホ作《星月夜》"
                 />
               </ConversationHeader>
 
